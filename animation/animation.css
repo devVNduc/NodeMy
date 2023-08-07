@@ -1,0 +1,159 @@
+/* animation:   animation-name, tên animation
+                animation-duration, thời gian cho 1 chu kỳ chuyển động
+                animation-timing-function, thiết lập đường cong gia tốc để xác định chuyển động qua các keyframe
+                animation-delay,  Xác định thời gian giữa thời điểm tải xong phần tử và bắt đầu chu kỳ chuyển động đầu tiên
+                animation-iteration-count, Xác định có bao nhiêu chu kỳ chuyển động sẽ được lặp lại
+                animation-direction, Xác định nếu chuyển động sẽ thay đổi hướng hoặc bắt đầu ở cùng một nơi mỗi lần sau khi reset.
+                animation-fill-mode, Xác định các giá trị được áp dụng cho phần tử trước chuyển động và sau khi nó được thực thi.
+                animation-play-state; Cho phép tạm dừng và khởi động lại chuỗi chuyển động.
+*/
+.container1 {
+    width: 500px;
+    height: 500px;
+    display: flex;
+}
+
+.cỉrcle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 9999%;
+    background-color: yellow;
+    animation-name: grow;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    box-shadow: 1px 200px 100px 50px yellow;
+   
+
+}
+
+@-webkit-keyframes grow {
+    0% {
+        right: 300px;
+    }
+    100% {
+        right: -1600px;
+    }
+
+}
+
+@-webkit-keyframes loading {
+    0% {
+        height: 10px
+    }
+
+    10% {
+        height: 11px
+    }
+
+    15% {
+        height: 12px
+    }
+
+    20% {
+        height: 13px
+    }
+
+    25% {
+        height: 14px
+    }
+
+    30% {
+        height: 15px
+    }
+
+    35% {
+        height: 16px
+    }
+
+    40% {
+        height: 17px
+    }
+
+    45% {
+        height: 18px
+    }
+
+    50% {
+        height: 19px
+    }
+
+    55% {
+        height: 20px
+    }
+
+    60% {
+        height: 21px
+    }
+
+    65% {
+        height: 22px
+    }
+
+    70% {
+        height: 23px
+    }
+
+    75% {
+        height: 24px
+    }
+
+    80% {
+        height: 25px
+    }
+
+    85% {
+        height: 26px
+    }
+
+    90% {
+        height: 27px
+    }
+
+    95% {
+        height: 28px
+    }
+
+    100% {
+        height: 29px
+    }
+}
+
+.square {
+    width: 20px;
+    height: 10px;
+    margin: 10px;
+    position: relative;
+    background-color: #8b0925;
+    animation-name: loading;
+    animation-duration: 0.4s;
+    animation-delay: 0s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+.two {
+    background-color: #2196f3;
+    animation-delay: -0.5s;
+}
+
+.three {
+    background-color: #8bc34a;
+    animation-delay: -0.6s;
+}
+
+.four {
+    background-color: #ffc107;
+    animation-delay: -0.3s;
+}
+
+.container2 {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,113 @@
+7/1/2023
+lÀM VIỆC CÙNG OBJECT VÀ ARR
+    - Tạo: object{key1: value1, key2: value2}
+    - Có 2 cách truy xuất Object
+        + C1: Truyền thằng key Object.key
+        + C2: Key là 1 chuỗi 
+                Object['key'] hoặc var a = 'key'  
+                                   Object[a]                
+    - Xóa 1 item trong object 
+        + delete delete Object.key
+    - Truy xuất array 
+        + 1 phần tử: array.[index]
+        + Cả mảng: Sử dụng vòng for 
+        ** Không dùng delete trong array: delete array[index] xóa phần tử vị trí index và tạo 1 khoảng trống ở đó
+    - Độ dài array
+        + 1 array có vị trí start = 0
+        + array.lenght: lấy độ dài của mảng
+    - Lấy phần tử đầu,cuối:
+        + array[0]: phần tử đầu
+        + array[array.lenght - 1]: phần tử cuối
+METHOD
+    - Làm việc với mảng
+        1. to string (chuyen 1 array sang string)
+        2. join (them ky tu giua cac phan tu)
+        3. pop (xoa phan tu bat dau tu cuoi mang tro di)
+        4. push (them phan tu vao cuoi mang)
+        5. shift (xoa phan tu bat dau tu dau mang)
+        6. unshift (them phan tu vao dau mang)
+        7. splicing (cat lay phan tu chi dinh,them phan tu vao vi tri chi dinh)
+        8. concat (noi chuoi,mang)
+        9. slicing (lay mang con tu vi tri start den end, khong the them phan tu)
+    - Date
+        - Hàm xử lý thời gian
+        - Khai báo 1 biến kiểu date: new Date(Y,M,D)
+            + Tháng giữ nguyên, tháng 1 = 0, ngày 2 = 1
+        - Khai báo fix cứng thời gian new Date("Y/M/D")
+        - getDay() hàm lấy thứ: thứ 2 = 1
+        - getDate() lấy số ngày
+        - getFullyear() lấy năm
+        - toLocalDateString('địa phương') chuyển về thời gian ngày tháng địa phương
+        - toString() chuyển giờ quốc tế UTC về giờ địa phương
+        - Ứng dụng: làm app bh là mấy h 
+        - Ví dụ: tính toán số ngày cộng vào, 30 ngày nữa là ngày bao nhiêu
+Array:
+    Array[value1, value2, value3,...]
+    push : them cuoi
+    pop: bo cuoi
+    unshift: them dau
+    shift : bo dau
+    splice: thêm và xoá tại index 
+    concat: nối mảng
+    join: nối item thành chuỗi với ký tự
+    indexOf: vị trí của phần tử
+    lastIndexOf: tương tự indexOf nhưng lấy vị trí cuối
+    filter: lọc mảng
+    map: tạo mảng mới dựa trên mảng cũ
+    find: lọc trả về 1 phần tử
+    reduce: cộng dồn
+    sort: sắp xếp các item trong mảng
+    slice: lấy mảng con
+
+Object:
+    .assign(obj1, obj2, o3):  dồn các key của obj sau vào obj đầu tiên
+    .keys trả về mảng key có trong obejct
+    .values, trả về mảng values có trong obj
+    .hasOwnProperty:  check xem có key hay không
+String: 
+    slice, substring: lấy chuỗi con
+    charAt:lấy kí tự ở vị trí..
+    trim: loại bỏ các khoảng trắng của đầu và cuối
+    toUpercase: trả về chuỗi HOA
+    startsWith: check xem chuỗi có bắt đầu = ... hay không
+    split: bẻ chuỗi thành mảng
+    replace: thay thế
+    include(contain): kiểm tra xem item đó có tồn tại trong array không
+    reverse: đảo ngược các item
+    match(regex) 
+    search(regex) tim vi tri dinh dang dau tien khop phai
+    split(regex)
+    replace(regex) 
+    //regex
+Date:
+    toLocalDateString
+    new Date(): tạo thời gian hiện tại (Ko truyen tham so thi la cua hien tai)
+    getDay : lấy thứ 0 - 6 : Cn - T7
+    getDate, set : lấy ngày
+    getMonth       0 - 11 thang 1 - thang 12
+    getFullyear
+    getTime: lấy tổng số ms tính từ 1970
+    so sanh date phai doi sang dang object
+    UTC: giờ ở mốc 0
+Math
+    - Math.PI
+    - Math.round() lam tron so 
+    - Math.abs() tri tuyet doi
+    - Math.sqrt()
+    - Math.abs()
+    - Math.ceil() lam tron tren 
+    - Math.floor() lam tron duoi
+    - Math.random() tra ve so thap phan 0 < & < 1
+        random từ 60 - 100 : 60 + (math.random() * 40) min-max: min + (0 => max-min) 
+    - Math.min() lay so lon nhat
+    - Math.max() lay so nho nhat
+Callback
+    - là 1 paramater dưới dạng là 1 function
+    - Linh động hàm được truyền vào không bị fix cứng và khai báo lại nhiều lần
+    - Khi dùng về sau mới phải định nghĩa
+boolean: true fasle
+function: gom câu lệnh
+null
+undefined 
+var
+let

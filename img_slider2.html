@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+        }
+        .container::-webkit-scrollbar {
+  display: none;
+}
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./img/4717744_TInhte-trentay-HondaCivic-2019-11.webp" alt="">
+        <img src="./img/4811922_cover_VMS2019_Tren_Tay_Honda_Accord_Turbo-4093-2.webp" alt="">
+        <img src="./img/5064691_Honda-HR-V-1.jpg" alt="">
+        <img src="./img/5064699_Honda-CR-V-2.jpg" alt="">
+        <img src="./img/4717744_TInhte-trentay-HondaCivic-2019-11.webp" alt="">
+    </div>
+<script>
+    var slideContainer = document.querySelector(".container")
+    var listImg = document.querySelectorAll("img")
+    var count = 1
+    
+    setInterval(()=>{
+        if(count == listImg.length){
+            count = 1
+            slideContainer.scrollLeft = 0
+        }
+        else{
+            count+=1
+            slideContainer.scrollLeft += 892;
+        }
+    },2000)
+</script>
+</body>
+</html>

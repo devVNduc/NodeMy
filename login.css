@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.perfect_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper_login {
+    width: 400px;
+}
+
+.wrapper_login>* {
+    margin-bottom: 20px;
+}
+
+.title_login {
+    text-align: center;
+    width: 100%;
+}
+
+.title_login h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.field {
+    font-size: 27px;
+}
+
+.field input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.link {
+    width: 100%;
+    text-align: end;
+    font-size: 20px;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.btn_login {
+    width: 100%;
+    background-color: rgb(6, 129, 237);
+    border-radius: 5px;
+    border: 0px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sub_login h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.btn_fb {
+    background-color: rgb(20, 74, 122);
+}
+
+.btn_fb i {
+    margin-right: 5px;
+}

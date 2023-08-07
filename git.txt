@@ -1,0 +1,2 @@
+3 vùng stage local và sever git quản lý
+working -> stage (l)

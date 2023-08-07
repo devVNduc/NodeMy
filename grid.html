@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        .grid-center{
+            display: grid;
+            grid-template-rows: 150px 500px 100px 100px ;
+            gap: 10px 10px;
+        }
+       .Header{
+            border: 1px solid black;
+            
+        }
+       .Menu{
+            display: grid;
+            border: 1px solid black;
+            grid-template: repeat(4,1fr) / repeat(4,1fr);
+            gap: 30px;       
+        }
+       .Menu .box{
+             border: 1px solid black;
+    }
+       .Content{
+            display: grid;
+            grid-template-columns: auto;
+            gap: 20px 70px;
+       }
+       .Content > * {
+            border: 1px solid black;
+       }
+       .SideBar{
+            display: flex;
+            border: 1px solid black;
+            justify-content: space-between;
+       }
+       .SideBar > *{
+            border: 1px solid black;
+            width: 30%;
+            height: 100%;
+       }
+
+       .content1{
+        
+       }
+       .content2{
+        
+       }
+       .main_content{
+        
+       }
+       .Footer{
+            border: 1px solid black;
+       }
+    </style>
+</head>
+<body>
+    <div class="grid-center">
+        <div class="Header">Header</div>
+        <div class="Menu">
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+        </div>
+        <div class="SideBar">
+            <div class="box">box</div>
+            <div class="box">box</div>
+            <div class="box">box</div>
+        </div>
+        <div class="Footer">Footer</div>
+    </div>   
+</body>
+</html>

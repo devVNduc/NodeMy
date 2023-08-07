@@ -1,0 +1,16 @@
+// @use "signup";
+@import "signup.scss";
+.login {
+  @extend .SignUp;
+  .login-btn {
+    @extend .SignUp-btn;
+    .btn_link {
+      .login_icon {
+        @extend .SignUp_icon;
+      }
+    }
+  }
+}
+.btn_login {
+  @extend .btn_signin;
+}

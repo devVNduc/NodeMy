@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="./style_slider_image.css">
+    <link rel="stylesheet" href="./img/">
+  </head>
+  <body>
+    <div class="animation">
+        <div class="logo">
+            <img src="./img/Honda-logo-1.png" alt="Logo Honda">
+        </div>
+    </div>
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="./img/4717744_TInhte-trentay-HondaCivic-2019-11.webp" alt="Honda Civic">
+        </div>
+        <div class="slide">
+          <img src="./img/4811922_cover_VMS2019_Tren_Tay_Honda_Accord_Turbo-4093-2.webp" alt="
+          Honda Accord">
+        </div>
+        <div class="slide">
+          <img src="./img/5064691_Honda-HR-V-1.jpg" alt="Honda HR-V">
+        </div>
+        <div class="slide">
+          <img src="./img/5064699_Honda-CR-V-2.jpg" alt="Honda CR-V">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <!--automatic navigation end-->
+    </div>
+    <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+
+      
+  </body>
+</html>

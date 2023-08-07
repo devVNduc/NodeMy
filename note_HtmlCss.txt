@@ -1,0 +1,36 @@
+Css, Responsive
+    h1 - h6
+    p(block) span(inline)
+    inline không xét được width height
+    a href đường dẫn có tuyệt đối và tương tối
+    picture source, video ,audio
+    div
+    table tr td
+    Form
+Chú ý unset dùng để hủy lệnh 
+DISPLAY FLEX
+    justify-content: căn cả 1 và 2 cột đều ăn
+    align-item: áp dụng 1 hàng so với sân 
+    align-content: căn các hàng so với sân
+    flex-wrap: xuống hàng tạo thành các hàng khác nhau 
+    order: sắp xếp thứ tự item
+    flex: item chiếm bao phần còn lại
+TRANFORM
+GRID & Cắt layout
+    //cha 
+    // 1fr phan con lai
+    grid-template-rows
+    grid-template-columns
+    grid-template: row  / col
+    grid-template-arear: tenArear . . .      (co the dung repeat(n, kichthuoc) )
+
+    // con
+
+    
+    - la chieu nguoc lai ,  span noi bao phan
+    order: thu tu manh dat duoc xep hang
+
+    grid-row: vitri start / end:
+    grid-column: vitri start / end:
+    grid-arear: startR / startC / endR / endC
+    
