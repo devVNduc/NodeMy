@@ -1,0 +1,14 @@
+{
+  "course": [
+    {
+      "id": 1,
+      "title": "Khoa hoc java nang cao",
+      "descriptions": "Dao tao cac ban hoc vien ve ngon ngu java"
+    },
+    {
+      "id": 2,
+      "title": "Khoa hoc python nang cao",
+      "descriptions": "Dao tao cac ban hoc vien ve ngon ngu python"
+    }
+  ]
+}

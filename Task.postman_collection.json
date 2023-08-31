@@ -1,0 +1,441 @@
+{
+	"info": {
+		"_postman_id": "f9dd46cd-19b3-4061-9bf5-52c5f3b9f48d",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Get all task",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "4",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://backoffice.nodemy.vn/api/tasks",
+							"protocol": "https",
+							"host": [
+								"backoffice",
+								"nodemy",
+								"vn"
+							],
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "pagination[page]",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "pagination[pageSize]",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "sort[0]",
+									"value": "createdAt:desc",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get task by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://backoffice.nodemy.vn/api/tasks/3814?populate=*",
+							"protocol": "https",
+							"host": [
+								"backoffice",
+								"nodemy",
+								"vn"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"3814"
+							],
+							"query": [
+								{
+									"key": "populate",
+									"value": "*"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImlhdCI6MTY5MTgxNTA1NCwiZXhwIjoxNjk0NDA3MDU0fQ.OznwLtamPCRACpLx-1_Bjp42Tg9uQSDEbmUHcgUsij8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "{",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "\"data\"",
+									"value": " ",
+									"type": "text"
+								},
+								{
+									"key": "{",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "\"title\"",
+									"value": " \"An choi test\",",
+									"type": "text"
+								},
+								{
+									"key": "\"date\"",
+									"value": " \"2023-05-28T17:02:00.000Z\",",
+									"type": "text"
+								},
+								{
+									"key": "\"complete\"",
+									"value": " false",
+									"type": "text"
+								},
+								{
+									"key": "}",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "}",
+									"value": "",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backoffice.nodemy.vn/api/tasks",
+							"protocol": "https",
+							"host": [
+								"backoffice",
+								"nodemy",
+								"vn"
+							],
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete task by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiaWF0IjoxNjgwMTY0MzY1LCJleHAiOjE2ODI3NTYzNjV9.DNl-fEIwImrbsRvnmZZP5dP64k9MQPQmDuZfXJjHHjY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://backoffice.nodemy.vn/api/tasks/1035",
+							"protocol": "https",
+							"host": [
+								"backoffice",
+								"nodemy",
+								"vn"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"1035"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update task by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiaWF0IjoxNjgwNDg2MzQ4LCJleHAiOjE2ODMwNzgzNDh9.52HaaWh_6EVSA3Iux_t2jNOtGaV69W_EwxQruGn9kfQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"data\": \r\n      {\r\n        \"title\": \"update\",\r\n            \"date\": \"2023-05-28T17:02:00.000Z\",\r\n            \"complete\": true\r\n      }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backoffice.nodemy.vn/api/tasks/1036",
+							"protocol": "https",
+							"host": [
+								"backoffice",
+								"nodemy",
+								"vn"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"1036"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://backoffice.nodemy.vn/api/tasks?pagination[page]=1&pagination[pageSize]=5&filters[title][$contains]=noi dung search",
+							"protocol": "https",
+							"host": [
+								"backoffice",
+								"nodemy",
+								"vn"
+							],
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "pagination[page]",
+									"value": "1"
+								},
+								{
+									"key": "pagination[pageSize]",
+									"value": "5"
+								},
+								{
+									"key": "filters[title][$contains]",
+									"value": "noi dung search"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/Users/namnd/Downloads/Sticky.png"
+								},
+								{
+									"key": "ref",
+									"value": "api::task.task",
+									"type": "default"
+								},
+								{
+									"key": "refId",
+									"value": "6144",
+									"type": "default"
+								},
+								{
+									"key": "field",
+									"value": "image",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://backoffice.nodemy.vn/api/upload",
+							"protocol": "https",
+							"host": [
+								"backoffice",
+								"nodemy",
+								"vn"
+							],
+							"path": [
+								"api",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"identifier\": \"hoang@gmail.com\",\n\"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backoffice.nodemy.vn/api/auth/local",
+					"protocol": "https",
+					"host": [
+						"backoffice",
+						"nodemy",
+						"vn"
+					],
+					"path": [
+						"api",
+						"auth",
+						"local"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get me from token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImlhdCI6MTY4MjMyMjc3MywiZXhwIjoxNjg0OTE0NzczfQ.rTknPbSp7m5TqlkfvRqoTUTIkiVgEN56NNkkT4lYefU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backoffice.nodemy.vn/api/users/me",
+					"protocol": "https",
+					"host": [
+						"backoffice",
+						"nodemy",
+						"vn"
+					],
+					"path": [
+						"api",
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\":\"abc\",\r\n\"email\": \"cuondg@gmail.com\",\r\n\"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backoffice.nodemy.vn/api/auth/local/register",
+					"protocol": "https",
+					"host": [
+						"backoffice",
+						"nodemy",
+						"vn"
+					],
+					"path": [
+						"api",
+						"auth",
+						"local",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

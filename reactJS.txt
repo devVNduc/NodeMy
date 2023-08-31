@@ -1,0 +1,73 @@
+ARROW FUNCTION
+ var tong = (a,b) => {
+    ......
+ }
+ var tong = a => {
+    ......
+ }
+ var tong = () => {
+    ......
+ }
+  var tong = a => a + 8 
+  var tong = a => ({}) return object 
+  arrow fnc ko có this, nếu cho this vào trong nó, nó sẽ lấy this global
+-------------------------------------
+DESTRUCTORING
+var person = {
+    name: 'Duy',
+    age: 19
+}
+var {name, age, xyz} = person // person thêm 1 key xyz
+var {name, age} = person
+tương tự với mảng
+var [,,z] = ['a','b','c'] // z = c
+* object theo key, array theo vị trí
+
+REF TYPE
+
+nhớ ví dụ về chiếc hộp
+clon 1 cấp ...
+clon nhiều cấp thì dùng JSON chuyển thành chuỗi cà chuyển thành lại
+
+import export
+
+A.js
+...
+export {
+    age: 9,
+    name: 'Thai'
+}
+export default 8888
+B.js
+import {age, name} from 'A.js'
+import x from 'A.js'
+
+package.json
+dev,vite,build,vite build
+dependencies:  
+   được sử dụng trong quá trình chạy ứng dụng React trong môi trường sản phẩm cuối (production).
+   Các phụ thuộc trong khối này thường là những thư viện cốt lõi của React như react và react-dom, cùng với các thư viện bổ sung khác như axios để giao tiếp với API hoặc lodash để thao tác dữ liệu
+devDependencies
+   phần phụ thuộc được sử dụng trong quá trình phát triển ứng dụng React
+   là các công cụ hỗ trợ phát triển, test và tối ưu mã nguồn như eslint, babel, webpack, jest, và typescript. Các công cụ này giúp đảm bảo chất lượng mã nguồn, kiểm tra lỗi, tự động hoá quy trình phát triển và cung cấp tính năng mở rộng
+
+cau tao 1 component don gian
+
+JSX
+ trong JSX là <> {Giá trị} </> / JSX có thể được lưu vào biến / Chú ý phải trả về 1 giá trị thì mới để được trong ngoặc
+    giá trị phải là string và số hoặc JSX thì nó mới hiển thị 
+
+Khi muốn thay đổi thì phải dùng setState
+setState là bất đồng bộ luôn thực thi sau các lệnh đồng bộ 
+setState dùng callback để lấy được biến mới nhất ,callback sẽ luôn lấy được giá trị mới nhất
+setState lưu được các giá trị sau mỗi lần reset, render lại là chạy lại fnc
+prop nhận giá trị , nhận giá trị từ component cha
+prop read only(const)
+lưu ý ref type truyền thông qua tham số
+cha render thì con render
+prop.chỉldern
+con render thì cha vẫn giữ nguyên 
+
+
+
+
